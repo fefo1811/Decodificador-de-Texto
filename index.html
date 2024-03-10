@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header class="container_cabecalho">
-        <img src="assets/img/alura-logo.png" alt="Imagem do logo da Alura" class="logo_alura">
-    </header>
-
+    
     <main class="container_principal">
-
+        <header class="container_cabecalho">
+            <img src="assets/img/alura-logo.png" alt="Imagem do logo da Alura" class="logo_alura">
+        </header>
+        
         <section class="container_conteudo">
             <input type="text" name="texto" placeholder="Digite seu texto" id="texto_input" class="texto_input">
 
-            <div class="container_botao">
-                <span>Apenas letras minúsculas e sem acento.</span>
+            <div class="container_acao">
+                <span class="aviso">Apenas letras minúsculas e sem acento.</span>
 
-                <div class="container_teste">
-                    <button>Criptografar</button>
-                    <button>Descriptografar</button>
+                <div class="container_botao">
+                    <button class="botao_criptografar">Criptografar</button>
+                    <button class="botao_descriptografar">Descriptografar</button>
                 </div>
             </div>
         </section>
 
         <aside class="container_lateral">
-            <img src="assets/img/imagem-1.svg" alt="Homem usando uma lupa para ver um diamante">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            <div class="container_criptografado">
+                <img src="assets/img/imagem-1.svg" alt="Homem usando uma lupa para ver um diamante" class="not_found">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
         </aside>
 
     </main>
